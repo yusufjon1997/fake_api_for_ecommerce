@@ -5,10 +5,11 @@ const jsonServer = require('json-server');
 
 const server = express();
 
+const port = rocess.env.PORT || 4000;
 
 server.use('/', jsonServer.defaults() , jsonServer.router('./db.json'));
 
-server.listen(4001 , ()=> console.log('server is running on 4001 port'));
+server.listen(port , ()=> console.log('server is running on 4001 port'));
 
 
 // const jsonServer = require('json-server');
