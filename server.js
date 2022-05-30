@@ -5,7 +5,7 @@ const jsonServer = require('json-server');
 
 const server = express();
 
-const port = rocess.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 server.use('/', jsonServer.defaults() , jsonServer.router('./db.json'));
 
